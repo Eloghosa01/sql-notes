@@ -1,0 +1,23 @@
+# Secrets and credentials
+.env
+*.env
+*.pem
+config.local.*
+
+# Data exports
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
