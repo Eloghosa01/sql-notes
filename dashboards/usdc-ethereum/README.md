@@ -32,3 +32,5 @@ USDC volume on Ethereum peaked at about 68B per day (Jul 13 and around Aug 29), 
 - Snapshot window only; nothing refreshes automatically.
 
 ![Dashboard](screenshots/dashboard.png)
+![Dashboard top](screenshots/p12.png)
+![Dashboard bottom](screenshots/p11.png)
