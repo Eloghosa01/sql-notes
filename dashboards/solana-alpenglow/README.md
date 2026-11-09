@@ -15,13 +15,16 @@ Looker Studio dashboard on BigQuery's public Solana data.
 3. Solscan chart as independent evidence
 
 ## Evidence status
-- **Step-down hour:** expected around 15:00 UTC on Oct 21. Actual hour from the hourly
-  query: PASTE_HOUR (record it here even if it differs from 15:00).
+- **Step-down hour:** the hourly count falls from 17,647,216 (13:00 UTC) to 9,005,734
+  (14:00 UTC) on Oct 21, so the step is at 14:00 UTC, not the 15:00 UTC I first expected.
 - **Fees:** not yet validated against Solscan. Oct 25 total from my query is 4,284.6 SOL and
   Oct 26 is 6,264.6 SOL; compare these with Solscan's network fee chart.
-- **Average fee:** Solscan's live "Avg Fee" is much lower than my table's daily averages, so
-  the average-fee chart is left out until the difference is explained.
-- **Zero votes on Oct 22, 23, 24:** Confirmed on Solscan (successful vote vs non-vote chart).
+- **Average fee:** Solscan's live "Avg Fee" (0.00001222 SOL) is much lower than my daily
+  averages (about 0.000032 to 0.000038 SOL from Oct 22 to Oct 27). It is close to my hourly
+  averages before 14:00 on Oct 21 (about 0.000011 to 0.000013 SOL), but I have not confirmed why,
+  so the average-fee chart is left out until the difference is explained.
+- **Zero votes on Oct 22 to Oct 27:** confirmed on Solscan (successful vote vs non-vote
+  chart). Vote transactions appear only on Oct 20 and Oct 21.
 
 ## Files
 - `queries/01_daily_tx_fees_oct21_27.sql`
@@ -37,6 +40,6 @@ Looker Studio dashboard on BigQuery's public Solana data.
 
 
 ## Images
-- ![alt text](image.png)
-- ![alt text](<Alpen 1.png>)
-- ![alt text](image.png)
+- ![alt text](dashboard-top.png-1.png)
+- ![alt text](dashboard-bottom.png.png)
+- ![alt text](solscan_vote_vs_nonvote.png.png)
